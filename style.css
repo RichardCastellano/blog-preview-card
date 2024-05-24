@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(47, 88%, 63%);  
+    font-family: Figtree;
+}
+
+p {
+    font-size: 16px;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    width: 386px;
+    height: 523px;
+    background-color: hsl(0, 0%, 100%);
+    border: black 1px solid;
+    border-radius: 15px;
+    box-shadow: 5px 5px black;
+    transition: 1s;
+}
+
+svg {
+    margin: 15px 0;
+    border-radius: 15px;
+    margin-left: 22px;
+}
+
+.txt-panel {
+    margin-top: 5px;
+    margin-left: 22px;
+    margin-right: 25px;
+    line-height: 1.5;
+}
+
+.sub-head {
+    width: 82px;
+    background-color: hsl(47, 88%, 63%);
+    padding: 3px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.time-stamp, .main-head {
+    margin-bottom: 15px;
+    transition: 1s;
+}
+
+.sub-text {
+    color: hsl(0, 0%, 50%);
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin: auto 22px 20px;
+}
+
+.author h5 {
+    margin: auto 10px;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+}
+
+.card:hover {
+    box-shadow: 15px 15px black;
+    transition: 500ms;
+    cursor: pointer;
+    .main-head {
+        color: hsl(47, 88%, 63%);
+        transition: 500ms;
+    }
+}
